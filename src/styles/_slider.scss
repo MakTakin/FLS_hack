@@ -1,0 +1,15 @@
+@mixin slider-colors {
+    background: linear-gradient(
+        90deg,
+        $darker-red 0%,
+        $lemon 40%,
+        $lime 65%,
+        $teal 100%
+    );
+    // background: linear-gradient(
+    //   90deg,
+    //   rgba(195, 34, 34, 1) 0%,
+    //   rgba(231, 247, 48, 1) 50%,
+    //   rgba(56, 199, 38, 1) 100%
+    // );
+}

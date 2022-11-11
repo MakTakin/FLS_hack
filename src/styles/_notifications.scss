@@ -1,0 +1,27 @@
+@import 'src/styles/variables';
+
+.Toastify__toast {
+  border-radius: 4px;
+  padding: 2px;
+  * {
+    font-size: 14px;
+  }
+  .Toastify__progress-bar--success {
+    background-color: $teal;
+  }
+  .Toastify__progress-bar--error {
+    background-color: $darker-red;
+  }
+  &.Toastify__toast--warning {
+    background: lighten(#edb229, 38);
+  }
+}
+
+.Toastify__close-button {
+  color: $blue;
+}
+
+.Toastify__toast--success {
+  background: #f6f7fd;
+  color: #000;
+}
