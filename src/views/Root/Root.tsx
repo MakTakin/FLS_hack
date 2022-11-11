@@ -1,4 +1,4 @@
-import React, { FC, useEffect } from 'react';
+import React, { FC } from 'react';
 import { connect } from 'react-redux';
 import { Route, Routes } from 'react-router-dom';
 import Page404 from '../../components/error-pages';
@@ -9,9 +9,6 @@ import { DashboardItem } from '../../modules/DashboardModule/components/Dashboar
 import { Dashboard } from '../../modules/DashboardModule/components/Dashboard/Dashboard';
 
 export const RootComponent: FC<any> = props => {
-  useEffect(() => {
-    props.getUser();
-  }, [props]);
 
   return (
     <>

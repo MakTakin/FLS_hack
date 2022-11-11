@@ -10,7 +10,6 @@ import { store, history } from './store';
 import Root from './views/Root';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { HistoryRouter as Router } from 'redux-first-history/rr6';
-import { DialogProvider } from './hooks/useDialog';
 
 const theme = createTheme({
   palette: {
@@ -90,13 +89,11 @@ declare module '@mui/material/styles' {
 const App: FC = () => {
   return (
     <ThemeProvider theme={theme}>
-      <DialogProvider>
         <Provider store={store}>
           <Router history={history}>
             <Root />
           </Router>
         </Provider>
-      </DialogProvider>
     </ThemeProvider>
   );
 };

@@ -1,7 +1,7 @@
 import { applyMiddleware, createStore, Middleware } from 'redux';
 
 import { createReduxHistoryContext } from 'redux-first-history';
-import { createHashHistory } from 'history';
+import { createBrowserHistory, createHashHistory } from 'history';
 import { composeWithDevTools } from 'redux-devtools-extension/developmentOnly';
 import createSagaMiddleware, { SagaMiddleware } from 'redux-saga';
 
@@ -17,7 +17,7 @@ const sagaMiddleware: SagaMiddleware = createSagaMiddleware();
 
 const { createReduxHistory, routerMiddleware, routerReducer } =
   createReduxHistoryContext({
-    history: createHashHistory(), // to replace with createBrowserHistory
+    history: createBrowserHistory(), // to replace with createBrowserHistory
     //other options if needed
   });
 

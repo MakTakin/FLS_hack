@@ -50,43 +50,6 @@ export const AppHeader: FC<any> = props => {
                     fontSize: '1rem',
                   })}
                 />
-                <Tab
-                  component={Link}
-                  to="/environments"
-                  label="My environments"
-                  value="/environments"
-                  onClick={(e: any) => handleChange(e, '/environments')}
-                  sx={theme => ({
-                    color: '#99A3B0',
-                    fontWeight: 600,
-                    fontSize: '1rem',
-                  })}
-                />
-                <Tab
-                  component={Link}
-                  to="/budget"
-                  label="Budget"
-                  value="/budget"
-                  onClick={(e: any) => handleChange(e, '/budget')}
-                  sx={theme => ({
-                    color: '#99A3B0',
-                    fontWeight: 600,
-                    fontSize: '1rem',
-                  })}
-                />
-                <Tab
-                  component={Link}
-                  to="/support"
-                  label="Support"
-                  value="/support"
-                  onClick={(e: any) => handleChange(e, '/support')}
-                  sx={theme => ({
-                    color: '#99A3B0',
-                    fontWeight: 600,
-                    fontSize: '1rem',
-                  })}
-                />
-
               </Tabs>
             </Grid>
             <Grid
@@ -98,24 +61,6 @@ export const AppHeader: FC<any> = props => {
               justifyContent="flex-end"
               // sx={{ color: 'white' }}
             >
-              <div
-                style={{
-                  marginRight: '15px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  fontWeight: 'bold',
-                }}
-              >
-                <AccountBalanceWalletIcon sx={{ mr: 0.5 }} /> Balance:{' '}
-                <span
-                  style={{
-                    // fontWeight: 'normal',
-                    marginLeft: '4px',
-                  }}
-                >
-                  150 units
-                </span>
-              </div>
               <div style={{ display: 'flex', alignItems: 'center', fontWeight: 'bold' }}>
                 <AccountCircleIcon sx={{ mr: 0.5 }} /> Smith J.
               </div>
